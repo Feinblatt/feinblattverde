@@ -5,23 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Feinblatt Verde — Pflanzen aus Köln</title>
-<meta name="description" content="Elegancia en Verde. Ausgesuchte Pflanzen aus Köln — auf Märkten, über Kleinanzeigen oder direkt bei uns, mit Lieferung im Umkreis.">
+<meta name="description" content="Elegancia en Verde. Kuratiert in Köln. Ausgesuchte Pflanzen — auf Märkten, über Kleinanzeigen oder direkt bei uns, mit Lieferung im Umkreis.">
 
 <!-- Linkvorschau: WhatsApp, Instagram, Facebook, LinkedIn -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://feinblattverde.de/">
 <meta property="og:title" content="Feinblatt Verde — Pflanzen aus Köln">
-<meta property="og:description" content="Elegancia en Verde. Ausgesuchte Pflanzen aus Köln — mit passendem Pflegeflyer zu jeder Pflanze.">
+<meta property="og:description" content="Elegancia en Verde. Kuratiert in Köln. Zu jeder Pflanze der passende Pflegeflyer.">
 <meta property="og:image" content="https://feinblattverde.de/vorschau.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Feinblatt Verde">
 
-<!-- Linkvorschau: X / Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Feinblatt Verde — Pflanzen aus Köln">
-<meta name="twitter:description" content="Elegancia en Verde. Ausgesuchte Pflanzen aus Köln — mit passendem Pflegeflyer zu jeder Pflanze.">
+<meta name="twitter:description" content="Elegancia en Verde. Kuratiert in Köln. Zu jeder Pflanze der passende Pflegeflyer.">
 <meta name="twitter:image" content="https://feinblattverde.de/vorschau.png">
 
 <link rel="icon" href="favicon.png">
@@ -45,23 +44,15 @@
     color:var(--ink);
     -webkit-font-smoothing:antialiased;
   }
-  main{
-    width:100%;
-    max-width:860px;
-    padding:0;
-  }
-  /* Das Deckblatt füllt die Breite, behält sein Seitenverhältnis */
-  .blatt{
-    display:block;
-    width:100%;
-    height:auto;
-  }
+  main{width:100%;max-width:860px}
+  .blatt{display:block;width:100%;height:auto}
+
   .aktionen{
     display:flex;
     gap:12px;
     flex-wrap:wrap;
     justify-content:center;
-    padding:22px 20px 34px;
+    padding:24px 20px 40px;
   }
   .aktionen a{
     display:inline-block;
@@ -69,7 +60,7 @@
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
     font-size:14px;
     letter-spacing:.06em;
-    padding:11px 20px;
+    padding:12px 22px;
     border-radius:2px;
     border:1px solid var(--ink);
     transition:background .15s,color .15s;
@@ -77,42 +68,42 @@
   .aktionen a.voll{background:var(--ink);color:var(--paper)}
   .aktionen a.voll:hover{background:#0a5439}
   .aktionen a.leer{background:transparent;color:var(--ink)}
-  .aktionen a.leer:hover{background:#EFEDE1}
-  .aktionen a:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+  .aktionen a.leer:hover{background:#EAE7D7}
+  .aktionen a.sonne{background:var(--sun);color:#fff;border-color:var(--sun)}
+  .aktionen a.sonne:hover{background:#e5660f;border-color:#e5660f}
+  .aktionen a:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
 
-  /* Nur für Suchmaschinen und Screenreader, unsichtbar */
-  .sr{
-    position:absolute;width:1px;height:1px;
-    padding:0;margin:-1px;overflow:hidden;
-    clip:rect(0,0,0,0);white-space:nowrap;border:0;
-  }
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+      overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 </head>
 <body>
 
 <main>
   <img class="blatt" src="deckblatt.png"
-       alt="Feinblatt Verde — Pflanzen aus Köln. Zu jeder Pflanze gehört ein passender Pflegeflyer. Zu finden auf Märkten rund um Köln, über Kleinanzeigen oder direkt, mit Lieferung im Umkreis.">
+       alt="Feinblatt Verde — Elegancia en Verde, kuratiert in Köln. Zu jeder Pflanze gehört ein passender Pflegeflyer. Zu finden auf Märkten rund um Köln, über Kleinanzeigen oder direkt, mit Lieferung im Umkreis.">
 
-  <div class="aktionen">
+  <nav class="aktionen">
+    <a class="sonne" href="pflege/">Pflegeanleitungen</a>
     <a class="voll" href="https://instagram.com/feinblatt_verde" target="_blank" rel="noopener">Auf Instagram folgen</a>
     <a class="leer" href="mailto:kontakt@feinblattverde.de">Schreib uns</a>
-  </div>
+  </nav>
 </main>
 
-<!-- Text für Suchmaschinen, damit die Seite gefunden wird -->
 <div class="sr">
   <h1>Feinblatt Verde — Pflanzen aus Köln</h1>
-  <p>Elegancia en Verde. Feinblatt Verde ist ein kleines Kölner Unternehmen, 2026 von Marius und Viktor
-  gegründet. Wir suchen Pflanzen aus, die mehr als Deko sind — so weitergegeben, dass sie bei dir bleiben.</p>
-  <p>Zu jeder Pflanze bekommst du bei uns einen passenden Pflegeflyer, abgestimmt auf ihren Standort:
-  Dschungel, Wald oder Wüste.</p>
-  <p>Du findest uns auf Märkten rund um Köln, auf Instagram, über Kleinanzeigen oder direkt bei uns,
-  mit Lieferung im Umkreis.</p>
+  <p>Elegancia en Verde. Kuratiert in Köln. Feinblatt Verde ist ein kleines Kölner Unternehmen,
+  2026 von Marius und Viktor gegründet. Wir suchen Pflanzen aus, die mehr als Deko sind —
+  so weitergegeben, dass sie bei dir bleiben.</p>
+  <p>Zu jeder Pflanze bekommst du bei uns einen passenden Pflegeflyer, abgestimmt auf ihren
+  Standort: Dschungel, Wald oder Wüste.</p>
+  <p>Du findest uns auf Märkten rund um Köln, auf Instagram, über Kleinanzeigen oder direkt
+  bei uns, mit Lieferung im Umkreis.</p>
   <p>Kontakt: kontakt@feinblattverde.de · Instagram: feinblatt_verde</p>
   <p>Impressum: Feinblatt Verde (Geschäftsbezeichnung der Lenart &amp; Ophoven GbR),
-  Esserstraße 35, 50354 Hürth. Kein Ausweis der Umsatzsteuer gemäß §19 UStG (Kleinunternehmerregelung).
-  Verantwortlich für den Inhalt (§18 Abs. 2 MStV): Viktor Lenart, Esserstraße 35, 50354 Hürth.</p>
+  Esserstraße 35, 50354 Hürth. Kein Ausweis der Umsatzsteuer gemäß §19 UStG
+  (Kleinunternehmerregelung). Verantwortlich für den Inhalt (§18 Abs. 2 MStV):
+  Viktor Lenart, Esserstraße 35, 50354 Hürth.</p>
 </div>
 
 </body>
