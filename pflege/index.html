@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pflegeanleitungen — Feinblatt Verde</title>
+<meta name="description" content="Dschungel, Wald oder Wüste — such deine Pflanzengruppe aus und erfahre, was deine Pflanze braucht.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://feinblattverde.de/pflege/">
+<meta property="og:title" content="Pflegeanleitungen — Feinblatt Verde">
+<meta property="og:description" content="Dschungel, Wald oder Wüste — such deine Pflanzengruppe aus.">
+<meta property="og:image" content="https://feinblattverde.de/vorschau.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Feinblatt Verde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://feinblattverde.de/vorschau.png">
+
+<link rel="icon" href="../favicon.png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<meta name="theme-color" content="#06402B">
+
+<style>
+  :root{
+    --paper:#F6F4E9;
+    --ink:#06402B;
+    --sun:#FF751F;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--paper)}
+  body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    font-family:Georgia,'Times New Roman',serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    width:100%;
+    max-width:620px;
+    margin:0 auto;
+    padding:44px 24px 40px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .kopf{text-align:center;margin-bottom:38px}
+  .kopf img{width:104px;height:auto;display:block;margin:0 auto 22px}
+  h1{
+    font-size:clamp(24px,6vw,32px);
+    font-weight:400;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    margin:0 0 12px;
+  }
+  .kopf p{
+    font-size:15px;
+    line-height:1.65;
+    margin:0;
+    color:#3D5145;
+  }
+
+  .karten{display:flex;flex-direction:column;gap:14px}
+
+  .karte{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    border:1px solid #D5D0BC;
+    border-radius:3px;
+    padding:20px 22px;
+    background:#FBFAF3;
+    transition:border-color .15s,background .15s,transform .12s;
+  }
+  .karte:hover{border-color:var(--ink);background:#fff;transform:translateY(-1px)}
+  .karte:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
+
+  .karte .zeile{display:flex;align-items:center;gap:14px}
+  .punkt{width:13px;height:13px;border-radius:50%;flex:none}
+  .p-dschungel{background:var(--ink)}
+  .p-wald{background:#4A7C59}
+  .p-wueste{background:var(--sun)}
+
+  .karte h2{
+    font-size:20px;
+    font-weight:400;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    margin:0;
+    flex:1;
+  }
+  .pfeil{font-size:19px;color:#9AA69E;font-family:-apple-system,sans-serif}
+  .karte:hover .pfeil{color:var(--ink)}
+
+  .karte p{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:13px;
+    line-height:1.6;
+    margin:9px 0 0 27px;
+    color:#5E6E64;
+  }
+
+  .zurueck{
+    text-align:center;
+    margin-top:34px;
+    padding-top:24px;
+    border-top:1px solid #DFDBC8;
+  }
+  .zurueck a{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:13px;
+    color:#5E6E64;
+    text-decoration:none;
+    letter-spacing:.05em;
+  }
+  .zurueck a:hover{color:var(--ink);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="kopf">
+    <img src="../favicon.png" alt="Feinblatt Verde">
+    <h1>Pflege</h1>
+    <p>Such die Gruppe aus, zu der deine Pflanze gehört.<br>
+       Dort steht alles, was sie braucht.</p>
+  </header>
+
+  <nav class="karten">
+
+    <a class="karte" href="dschungel/">
+      <span class="zeile">
+        <span class="punkt p-dschungel"></span>
+        <h2>Dschungel</h2>
+        <span class="pfeil">→</span>
+      </span>
+      <p>Warm, hell, hohe Luftfeuchtigkeit.<br>
+         Monstera · Philodendron · Anthurium · Alocasia · Strelitzia</p>
+    </a>
+
+    <a class="karte" href="wald/">
+      <span class="zeile">
+        <span class="punkt p-wald"></span>
+        <h2>Wald</h2>
+        <span class="pfeil">→</span>
+      </span>
+      <p>Schattig, gleichmäßig feucht, ruhiger Standort.<br>
+         Calathea · Einblatt · Efeutute · Pilea · Dieffenbachie</p>
+    </a>
+
+    <a class="karte" href="wueste/">
+      <span class="zeile">
+        <span class="punkt p-wueste"></span>
+        <h2>Wüste</h2>
+        <span class="pfeil">→</span>
+      </span>
+      <p>Hell, trocken, viel Sonne.<br>
+         Kakteen · Aloe Vera · Bogenhanf · Sukkulenten · Euphorbia</p>
+    </a>
+
+  </nav>
+
+  <div class="zurueck">
+    <a href="../">← Zurück zu Feinblatt Verde</a>
+  </div>
+
+</div>
+
+</body>
+</html>
