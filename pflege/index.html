@@ -78,13 +78,14 @@
     transition:border-color .15s,background .15s,transform .12s;
   }
   .karte:hover{border-color:var(--ink);background:#fff;transform:translateY(-1px)}
+  .karte:hover .punkt{background:var(--sun)}
   .karte:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
 
   .karte .zeile{display:flex;align-items:center;gap:14px}
   .punkt{width:13px;height:13px;border-radius:50%;flex:none}
-  .p-dschungel{background:var(--sun)}
+  .p-dschungel{background:var(--ink)}
   .p-wald{background:var(--ink)}
-  .p-wueste{background:var(--sun)}
+  .p-wueste{background:var(--ink)}
 
   .karte h2{
     font-size:20px;
